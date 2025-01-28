@@ -6,7 +6,7 @@ app.use((req, res, next) => {
     const logDetails = {
         timestamp: new Date().toISOString(),
         ip: req.ip,
-        url: req.originalUrl,
+        url: req.originalUrl,      
         protocol: req.protocol,
         method: req.method,
         hostname: req.hostname,
